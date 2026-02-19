@@ -2,7 +2,7 @@ const form = document.getElementById("myform");
 const input = document.getElementById("myinput");
 const list = document.getElementById("myitem");
 
-// Form submit event
+
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -15,7 +15,7 @@ form.addEventListener("submit", function (event) {
     }
 });
 
-// Function to add task
+
 function addTask(taskText) {
     const li = document.createElement("li");
     li.textContent = taskText;
@@ -30,3 +30,4 @@ function addTask(taskText) {
     li.appendChild(deleteBtn);
     list.appendChild(li);
 }
+
